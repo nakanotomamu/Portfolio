@@ -1,0 +1,96 @@
+h1, h2 {
+  font-weight: 50;
+  margin-bottom: 100px;
+}
+
+.text-white {
+  color: #FFF	;
+}
+
+.btn-white {
+  color: #75A9FF	;
+  border: 1px solid #75A9FF ;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  background-color: rgba(255,255,255,1);
+  margin-bottom: 10px;
+  margin-left: 50px;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.user-white2 {
+  color: #FFF	;
+  border: 1px solid #FFF ;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.0);
+  margin-bottom: 10px;
+
+  &:hover {
+    color: #fff;
+  }
+}
+.top-hero-wrapper {
+  width: 100vw;
+ 
+  background-image: image-url('isezakiijinkaiI.jpg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #DDDDDD;
+}
+
+.top-hero-container {
+  padding-top: 220px;
+  h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-bottom: 80px;
+  }
+}
+
+.lent-bottan {
+  color: #75A9FF	;
+  border: 20px ,30px #75A9FF ;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-size: 30px;
+  background-color: rgba(0,0,0,0.0);
+  margin-right: 300px;
+  
+  &:hover {
+    color: #fff;
+  }
+}
+
+.buy-bottan {
+  color: #75A9FF	;
+  border: 20px ,30px #75A9FF ;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-size: 30px;
+  background-color: rgba(0,0,0,0.0);
+  margin-left: 150px;
+
+
+  &:hover {
+    color: #fff;
+  }
+} 
+
+.alert {
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
