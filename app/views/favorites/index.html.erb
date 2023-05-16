@@ -1,0 +1,21 @@
+<div class="property-index-wrapper">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="property-index-single">
+            <h2>物件情報/Rent</h2>
+               <% @favorite_properties.each do|property|%>
+                  <p>〇<%= property.title%></p>
+                     <p><%= property.description %></p>
+                      
+                     <% if property.image.present? %>
+                          <p>
+                              <%= image_tag property.image.url, class: 'image' %>
+                          </p>
+                     <% end %>
+               <% end%>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

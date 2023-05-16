@@ -1,0 +1,29 @@
+<div class="topic-index-wrapper">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-2">
+          <div class="topic-index-single">
+            <h2>物件情報/Rent</h2>
+               <% @properties.each do|property|%>
+                    <p>..................................................................................................................................................</p>
+                      <p>◎◎<%= property.title%></p>
+                         <p><%= property.description %></p>
+                          
+                         <% if property.image.present? %>
+                              <p>
+                                  <%= image_tag property.image.url, class: 'image' %>
+                              </p>
+                         <% end%>
+                         <% if logged_in? %>
+                            <div>
+                             <%= link_to favorites_path(property_id: property.id), method: :post do %>
+                                <%= image_tag 'icons/heart-black.png', class: 'topic-index-icon' %>
+                             <% end %>
+                            </div>
+                         <% end %>
+            　　<% end%>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>

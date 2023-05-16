@@ -1,4 +1,4 @@
-class PropertyController < ApplicationController
+class PropertiesController < ApplicationController
   def index
     @properties = Property.where(utilityfrom: 1)
   end

@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   
-  get 'property/index'
-  get 'property/show'
-  get 'property/buy'
+  get 'properties/index'
+  get 'properties/show'
+  get 'properties/buy'
   
   resources :properties
   devise_for :admin_users, ActiveAdmin::Devise.config

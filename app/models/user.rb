@@ -3,6 +3,8 @@ class User < ApplicationRecord
   validates :email, presence: true
   
   has_secure_password
-
+  
+ 
   has_many :favorites
+  has_many :favorite_properties, through: :favorites, source: 'property'
 end
