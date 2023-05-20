@@ -17,7 +17,10 @@ ActiveAdmin.register Property do
         row :title
         row :description
         row :image do
+        if item_image.image.blank?
+        else 
           image_tag(property.image.url)
+        end
         end
         row :utilityfrom
       end
